@@ -1,0 +1,365 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+for details on configuring this project to bundle and minify static web assets. */
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+}
+
+.display-none{
+    display:none;
+}
+
+.bgimg{
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-welcome {
+    background-image: url(/images/analysis-coffee-cup-1549702.jpg);
+    min-height: 100%;
+    height: 100vh;
+}
+
+.caption-this{
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+.topleft {
+    right: 20%;
+    top: 25%;
+    margin-left: 5%;
+}
+
+.bottomright {
+    left: 20%;
+    top: 75%;
+    margin-right: 5%;
+}
+
+.letter-spaced {
+    letter-spacing: 0.6em;
+}
+
+.box {
+    background-color: rgba(27, 27, 27, 1);
+    color: white;
+    padding: 1em;
+    font-size: 2em;
+}
+
+.recherche {
+    width: 100%;
+    height: 40vh;
+    background-color: #C8D8EB;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.centerme{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recherche p {
+    font-size: 1.8em;
+}
+
+.margin-top{
+    margin-top: auto;
+}
+
+.margin-bottom{
+    margin-bottom: auto;
+}
+
+#rech-box {
+    background-color: #E8E4F9;
+    padding: 1em;
+    width: 45%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+@media (max-width:1050px){
+    .letter-spaced {
+        letter-spacing: 0.3em;
+    }
+    .bgimg-welcome{
+        background-attachment: scroll;
+    }
+}
+
+
+
+
+.bgimg-second {
+    background-image: url(/images/firecracker-focus-hand-2407130.jpg);
+    height: 45vh;
+}
+
+.bgimg-third {
+    background-image: url(/images/data-note-notebook-970198.jpg);
+    height: 45vh;
+}
+
+.miniquote-right{
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    bottom: 1.5em;
+    right: 1.5em;
+    position: absolute;
+    font-style: italic;
+    /*letter-spacing: 0.4em;*/
+}
+
+.miniquote-left {
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    bottom: 1.5em;
+    left: 1.5em;
+    position: absolute;
+    font-style: italic;
+    /*letter-spacing: 0.4em;*/
+}
+
+#wrap-about{
+    display: flex;
+    flex-direction: row;
+}
+
+#about-left {
+    background-color: #8d86c9;
+    background-image: url(/images/apropos.jpg);
+    width: 50%;
+    height: 145vh;
+    position: relative;
+    flex: 1;
+    border-right: 1px solid black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about-right {
+    position: relative;
+    width: 50%;
+    background-color: #fdf0d5;
+    display: flex;
+    flex-direction: column;
+    height: 145vh;
+}
+
+#about-timeline {
+    position: relative;
+    /*flex: 1;*/
+    /*max-height: 80vh;*/
+}
+
+
+#about-timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    /*top: 0;*/
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    height: 100%;
+
+}
+
+#about-timeline:first-child{
+    margin-top: 3em;
+}
+
+.about-container {
+    padding: 0.9em 2.5em;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.about-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #fdf0d5;
+    border: 4px solid #734B5E;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.go-left {
+    left: 0;
+}
+
+.go-right {
+    left: 50%;
+}
+
+.go-left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #565857;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #565857;
+}
+
+.go-right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #565857;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #565857 transparent transparent;
+}
+
+.go-right::after {
+    left: -12px;
+}
+
+.about-content {
+    padding: 5px 30px;
+    background-color: #565857;
+    position: relative;
+    border-radius: 6px;
+    color: #fdf0d5;
+}
+
+.about-content h3{
+    margin: 0;
+}
+
+.about-content p{
+    text-align: right;
+}
+#about-box-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*margin-bottom: 3em;*/
+    /*margin-top: 3em;*/
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about-box {
+    color: #fdf0d5;
+    background-color: #565857;
+    border: 2px double #734B5E;
+    border-radius: 1em;
+    padding: 1em;
+    /*margin-bottom: 2em;*/
+    /*flex: 1;*/
+}
+
+.about-box ul {
+    color: #fdf0d5;
+    background-color: inherit;
+    margin-left: 1em;
+}
+
+.about-box h2{
+    margin-top: 0;
+}
+
+.pdf {
+    /*margin-bottom: 3em;*/
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.scroll-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: white;
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    padding-top: 60px;
+}
+
+.scroll-btn span{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+}
+
+@media (max-width:850px) {
+    .letter-spaced {
+        letter-spacing: initial;
+    }
+
+    .topleft {
+        right: 0;
+    }
+
+    .bottomright {
+        left: 0;
+    }
+
+    .box {
+        font-size: 1.5em;
+    }
+
+    #wrap-about {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #about-left {
+        width: 100%;
+        height: 70vh;
+        border: none;
+    }
+
+    #about-right {
+        width: 100%;
+    }
+}
