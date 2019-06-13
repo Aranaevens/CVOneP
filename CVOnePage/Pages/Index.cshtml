@@ -1,78 +1,254 @@
 ﻿@page
 @model IndexModel
 
-<main>
-    <div class="bgimg bgimg-welcome">
-        <div class="caption-this topleft">
-            <span class="box letter-spaced">Nicolas EISENBERG</span>
+    <main>
+        <div class="bgimg bgimg-welcome">
+            <div class="caption-this topleft">
+                <span class="box letter-spaced">Nicolas EISENBERG</span>
+            </div>
+            <div class="caption-this bottomright">
+                <span class="box letter-spaced">Développeur Web</span>
+            </div>
+            <a href="#rech-box" class="scroll-btn"><span></span></a>
         </div>
-        <div class="caption-this bottomright">
-            <span class="box letter-spaced">Développeur Web</span>
-        </div>
-        <a href="#rech-box" class="scroll-btn"><span></span></a>
-    </div>
-    <section class="recherche">
-        <div id="rech-box" class="margin-bottom margin-top">
-            <p class="margin-top">Actuellement à la recherche d'un stage dans le développement Web</p>
-            <p class="margin-bottom">Du 2 Septembre au 25 Octobre 2019</p>
-        </div>
-    </section>
-    <section class="bgimg bgimg-second">
-        <span class="miniquote-right">#bruce-banner {<br />&emsp;color: pink;<br />&emsp;transition: color 10s;<br />}<br />#bruce-banner.the-hulk {<br />&emsp;color: green;<br />}</span>
-    </section>
-    <section id="wrap-about">
-        <div id="about-left">
+        <section class="recherche">
+            <div id="rech-box" class="margin-bottom margin-top">
+                <p class="margin-top">Actuellement à la recherche d'un stage dans le développement Web</p>
+                <p class="margin-bottom">Du 2 Septembre au 25 Octobre 2019</p>
+            </div>
+        </section>
+        <section class="bgimg bgimg-second">
+            <span class="miniquote-right">#bruce-banner {<br />&emsp;color: pink;<br />&emsp;transition: color 10s;<br />}<br />#bruce-banner.the-hulk {<br />&emsp;color: green;<br />}</span>
+        </section>
+        <section id="wrap-about">
+            <div id="about-left">
 
-        </div>
-        <div id="about-right">
-            <div id="about-timeline">
-                <div class="about-container go-left">
-                    <div class="about-content">
-                        <h3>« Développeur Web/Web mobile » Formation Professionnelle — Elan Formation — Strasbourg</h3>
-                        <p>Mai 2019 — Décembre 2019</p>
+            </div>
+            <div id="ghost1"></div>
+            <div id="about-right">
+                <div id="about-timeline">
+                    <div class="about-container go-left">
+                        <div class="about-content">
+                            <h3>« Développeur Web/Web mobile » Formation Professionnelle — Elan Formation — Strasbourg</h3>
+                            <p>Mai 2019 — Décembre 2019</p>
+                        </div>
+                    </div>
+                    <div class="about-container go-right">
+                        <div class="about-content">
+                            <h3>Première année de cursus Ingénieur (ING1) <em>(Niveau)</em> — EPITA — Le Kremlin-Bicêtre</h3>
+                            <p>2015 — 2017</p>
+                        </div>
+                    </div>
+                    <div class="about-container go-left">
+                        <div class="about-content">
+                            <h3>CPGE Scientifique — Spécialité Physique-Chimie — Lycée Kléber — Strasbourg</h3>
+                            <p>2013 — 2015</p>
+                        </div>
+                    </div>
+                    <div class="about-container go-right">
+                        <div class="about-content">
+                            <h3>Baccalauréat Scientifique — Spécialité Mathématiques — Lycée Freppel — Obernai</h3>
+                            <p>2011</p>
+                        </div>
                     </div>
                 </div>
-                <div class="about-container go-right">
-                    <div class="about-content">
-                        <h3>Première année de cursus Ingénieur (ING1) <em>(Niveau)</em> — EPITA — Le Kremlin-Bicêtre</h3>
-                        <p>2015 — 2017</p>
+                <div id="about-box-wrap">
+                    <div class="about-text">
+                        <h2>Anglais</h2>
+                        <p>Courant (TOIEC: 965, passé en 2016)</p>
+                    </div>
+                    <div class="about-text">
+                        <h2>Hobbies</h2>
+                        <ul>
+                            <li>Jouer de la guitare</li>
+                            <li>Cultiver sa curiosité sur le web</li>
+                            <li>Jeux de rôles</li>
+                            <li>Suivre le monde e-sportif</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="about-container go-left">
-                    <div class="about-content">
-                        <h3>CPGE Scientifique — Spécialité Physique-Chimie — Lycée Kléber — Strasbourg</h3>
-                        <p>2013 — 2015</p>
-                    </div>
-                </div>
-                <div class="about-container go-right">
-                    <div class="about-content">
-                        <h3>Baccalauréat Scientifique — Spécialité Mathématiques — Lycée Freppel — Obernai</h3>
-                        <p>2011</p>
-                    </div>
+                <div class="about-box centerme pdf">
+                    <h2>Télécharger mon CV au format PDF</h2>
+                    <p id="p-pdf"><a href="~/misc/CV_Nicolas_Eisenberg_v3.pdf" download="Nicolas_Eisenberg_CV"><i class="fas fa-file-pdf"></i></a></p>
                 </div>
             </div>
-            <div id="about-box-wrap">
-                <div class="about-box">
-                    <h2>Anglais</h2>
-                    <p>Courant (TOIEC: 965, passé en 2016)</p>
-                </div>
-                <div class="about-box">
-                    <h2>Hobbies</h2>
-                    <ul>
-                        <li>Jouer de la guitare</li>
-                        <li>Cultiver sa curiosité sur le web</li>
-                        <li>Jeux de rôles</li>
-                        <li>Suivre le monde e-sportif</li>
-                    </ul>
-                </div>
+        </section>
+        <section class="bgimg bgimg-third">
+            <span class="miniquote-left">#mario-mushroom {<br />&emsp;transform: scale(200%);<br />}</span>
+        </section>
+
+        <section id="wrap-port">
+
+            <div id="port-left">
+                <article class="port-article article-left">
+                    <aside class="port-img-left"><img class="modal-mini" src="~/images/detective-pikachu-citizen-kane.jpg" alt="Pikachu" /></aside>
+                    <div class="modal">
+                        <span class="close">&times;</span>
+                        <article class="modal-content">
+                            <h3>IA de Bataille Pokémon</h3>
+                            <p>Le but de ce projet était d'automatiser un combat entre deux dresseurs de Pokémon.</p>
+                            <p>
+                                Chaque dresseur commençait avec une équipe de Pokémons, possédant des attaques avec chacunes des attributs. La liste des pokémons, des attaques et des statistiques
+                                sont récupérés et parsés à partir de fichiers CSV. Ensuite, une fonction d'évaluation vient rendre compte de l'état de la partie. Cette fonction d'évaluation sert à
+                                l'algorithme Minmax pour choisir quelle attaque faire chaque tour.
+                            </p>
+                            <p>L'application récupère les choix sur le serveur et applique les différentes attaques utilisées et boucle jusqu'à la défaite d'un des deux participants.</p>
+                            <section><h3 class="project-name"><i class="fab fa-github"></i><a href="http://https://github.com/Aranaevens/iapoke">  Application entière sur GitHub  </a><i class="fab fa-github"></i></h3></section>
+
+                            <script src="https://gist.github.com/Aranaevens/3c9e83e52e2ca5e6c72ee9fc94f2adf6.js"></script>
+                        </article>
+                    </div>
+                    <div class="text-wrapper">
+                        <h3>IA de Bataille Pokémon</h3>
+                        <p><strong>Langage: C++</strong></p> <p><em>Pour de plus amples informations, cliquer l'image</em></p>
+                    </div>
+                </article>
+
+                <article class="port-article article-right">
+
+                    <div class="text-wrapper">
+                        <h3>N-Résolveur de Tétravex</h3>
+                        <p><strong>Langage: C++</strong></p> <p><em>Pour de plus amples informations, cliquer l'image</em></p>
+                    </div>
+                    <aside class="port-img-right"><img class="modal-mini" src="~/images/tetra-mini.jpg" alt="Image Tetravex" /></aside>
+                    <div class="modal">
+                        <span class="close">&times;</span>
+                        <article class="modal-content">
+                            <h3>N-Résolveur de Tétravex</h3>
+                            <p>Un tétravex est un ensemble de tuiles qui portent chacune un nombre sur chacuns de leurs côtés. Ce sont par exemple des dominos à 4 faces.</p>
+                            <p>
+                                Le N problème est de savoir, avec un ensemble de tuiles, s'il existe une ou plusieurs solutions pour que chaque faces voisines aient le même nombre, et évidemment de savoir
+                                quelles sont ces solutions. Cette application cherche ces solutions à l'aide d'un algorithme appelé Breadth-first Search (BFS), qui va exploré des arbres de solutions pour résoudre
+                                le problème. Dès qu'une solution est trouvée elle est gardée.
+                            </p>
+                            <section><h3 class="project-name"><i class="fab fa-github"></i><a href="https://github.com/Aranaevens/tetra-solver">  Application entière sur GitHub  </a><i class="fab fa-github"></i></h3></section>
+
+                            <script src="https://gist.github.com/Aranaevens/2a85efd792058cf35bcc72feeaec2999.js"></script>
+                        </article>
+                    </div>
+                </article>
+
+                <article class="port-article article-left">
+                    <aside class="port-img-left"><img class="modal-mini" src="~/images/tictac-mini.jpg" alt="Image Morpion" /></aside>
+                    <div class="modal">
+                        <span class="close">&times;</span>
+                        <article class="modal-content">
+                            <h3>TicTacToe (Morpion) Dynamique</h3>
+                            <p>Le but de ce projet était simplement de faire un Morpion pour jouer sur un Wamp local en PHP.</p>
+                            <p>
+                                Chaque joueur peut rentrer son nom et le symbole de son choix dans un formulaire brut. La page est ensuite redirigée vers le morpion en lui même.
+                                Trois zones sont définies avec Bootstrap : la grille de jeu et une zone par joueur, récapitulant le symbole et le tour du joueur en cours. Chaque fois
+                                que l'on clique sur une case vide de la grille, le symbole du joueur courant est affiché dans la case, la main passe à l'autre joueur. L'ensemble des données
+                                nécessaires sont passées soit par session (pour le tableau entier, qui est une classe ayant un attribut matrice (array d'array)) soit par Get pour retrouver
+                                les coordonnées du clic.
+                            </p>
+                            <p>Dès que l'application détecte un vainqueur, le jeu se gèle, le vainqueur est affiché clairement et un bouton pour rejouer est affiché.</p>
+                            <p>Si sur le principe, cette application est plus simple en jQuery qu'en PHP, le faire en PHP était néanmoins intéressant d'un point de vue pédagogique.</p>
+                            <section><h3 class="project-name"><i class="fab fa-github"></i><a href="https://github.com/Aranaevens/Tictactoe">  Application entière sur GitHub  </a><i class="fab fa-github"></i></h3></section>
+
+                            <script src="https://gist.github.com/Aranaevens/76373bcff588b2e780967b5a3ce387b8.js"></script>
+
+                        </article>
+                    </div>
+                    <div class="text-wrapper">
+                        <h3>TicTacToe (Morpion) Dynamique</h3>
+                        <p><strong>Langage: PHP (Orienté Object)</strong></p> <p><em>Pour de plus amples informations, cliquer l'image</em></p>
+                    </div>
+                </article>
+
+                <article class="port-article article-right">
+
+                    <div class="text-wrapper">
+                        <h3>Ancienne version du site</h3>
+                        <p><strong>Langages: ASP.NET MVC/C#</strong></p> <p><em>Pour de plus amples informations, cliquer l'image</em></p>
+                    </div>
+                    <aside class="port-img-right"><img class="modal-mini" src="~/images/ancienne-version.jpg" alt="Minitature ancienne version" /></aside>
+                    <div class="modal">
+                        <span class="close">&times;</span>
+                        <article class="modal-content">
+                            <h3>Ancienne version du site</h3>
+                            <p>L'ancienne version de ce site était une approche purement fonctionnelle pour découvrir le MVC d'ASP.NET à travers un projet qui pourrait me servir.</p>
+                            <p>
+                                La partie Formations du CV a été conçue à la base grâce à une base de données, bien que peu utile dans ce cas là, ça m'a permis de voir les appels de BDD sur une page Razor et la façon dont fonctionne Entity Framework comme ORM. Cependant pour une facilité d'hébergement j'ai repassé le code en statique avant la publication. Le projet m'a également permis de découvrir le large catalogue de services proposés par Microsoft Azure.
+                            </p>
+                            <p>Cependant, le site dans sa première version avait un design simpliste et ne cherchait qu'à couvrir l'aspect fonctionnel. La présente seconde version se penche plus en détail sur l'aspect esthétique de l'application.</p>
+                            <section><h3 class="project-name"><a target="_blank" href="https://nicolasecv.azurewebsites.net">  Lien vers l'ancienne version  </a></h3></section>
+                            <section><h3 class="project-name"><i class="fab fa-github"></i><a href="https://github.com/Aranaevens/VitrineCV">  Application entière sur GitHub  </a><i class="fab fa-github"></i></h3></section>
+
+                        </article>
+                    </div>
+                </article>
+
+                <article class="port-article article-left">
+                    <aside class="port-img-left"><img class="modal-mini" src="~/images/misc.jpg" alt="Image Misc" /></aside>
+                    <div class="modal">
+                        <span class="close">&times;</span>
+                        <article class="modal-content">
+                            <h2>Autres projets entrepris</h2>
+
+                            <p>
+                                Que ce soit parce que je ne possède plus le code source de certains projets ou par choix de pertinence, je n'ai fait des Views pour chaque projet que j'ai fait, en voici une liste non exhaustive d'autres applications notables sur lesquelles j'ai travaillé.
+                            </p>
+
+                            <h3>C</h3>
+                            <h4 class="ot-h">Lecteur ISO</h4>
+                            <p class="ot-p">Un binaire permettant de naviguer dans le contenu d'un fichier ISO passé en paramètre. Un prompt apparaissait pour entrer diverses commandes comme CD pour se déplacer dans les directories (en prenant '.' et '..' comme possibilités, CAT pour afficher le contenu d'un sous fichier, LS pour afficher une liste des fichiers et répertoires présents à un endroit précis...</p>
+                            <h4 class="ot-h">Parseur de Shell</h4>
+                            <p class="ot-p">Pour le début d'un projet de Terminal (type Bash) j'ai implémenté une grande partie d'un parseur de langage Shell.</p>
+
+                            <h3>C++</h3>
+                            <p class="ot-p">Je m'étais également penché sur le projet frère de l'IA pokémon qui consistait à implémenter un algorithme de Pathfinding pour aller d'un point A à un point B en ayant des cases possédant divers attributs. Par exemple une case avec de l'eau ou une case forêt "coûtait" plus de points de mouvement qu'une case plaine.</p>
+
+                            <h3><i class="fab fa-java"></i> JAVA</h3>
+                            <p class="ot-p">
+                                Implémentation des classes nécessaires à une bataille navale en ligne. En particulier écrire les classes des différents bateaux, de la grille, des méthodes nécessaires à indiquer qu'un bateau est coulé et le transmettre au serveur
+                                avec un .json.
+                            </p>
+
+                            <h3>Ruby/Rails</h3>
+                            <p class="ot-p">Simple initiation au langage à travers un tutorial sur le net. Il m'a appris néanmoins la notion de MVC, réutilisée notamment dans le projet du site web CV.</p>
+
+                        </article>
+                    </div>
+                    <div class="text-wrapper">
+                        <h3>Autres Projets</h3>
+                        <p><strong>Langage: Divers</strong></p> <p><em>Pour de plus amples informations, cliquer l'image</em></p>
+                    </div>
+                </article>
+
+                <article class="port-article article-right">
+
+                    <div class="text-wrapper">
+                        <h3>Reproduction d'un thême Wordpress</h3>
+                        <p><strong>Langages: HTML/CSS/JS</strong></p> <p><em>Reproduction pour un exercice d'un template de thême Wordpress.</em></p> <p><em>L'image ouvre un nouvel onglet avec la démo</em></p>
+                    </div>
+                    <aside class="port-img-right"><a target="_blank" href="~/misc/Vibes/index.html"><img class="modal-mini" src="~/images/vibes.jpg" alt="Theme miniature" /></a></aside>
+                </article>
+
+
             </div>
-            <div class="about-box centerme pdf">
-                <h2>Télécharger mon CV au format PDF</h2>
-                <p>Link</p>
+
+            <div id="port-right">
+
             </div>
-        </div>
-    </section>
-    <section class="bgimg bgimg-third">
-        <span class="miniquote-left">#mario-mushroom {<br />&emsp;transform: scale(200%);<br />}</span>
-    </section>
-</main>
+        </section>
+
+        <section class="bgimg bgimg-fourth">
+            <span class="miniquote-right">Why does a PHP programmer go to the optician ?<br /><br />Because he doesn't C#</span>
+        </section>
+
+        <section class="recherche">
+
+            <h2>CONTACT</h2>
+            <div id="wrap-contact">
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr><td><i class="fas fa-search-location"></i></td><td>42 rue Gounod, 67400 ILLKIRCH</td></tr>
+                        <tr><td><i class="fas fa-mobile-alt"></i></td><td>07.60.36.98.65</td></tr>
+                        <tr><td><i class="fas fa-at"></i></td><td>eisenberg.nicolas@gmail.com</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
